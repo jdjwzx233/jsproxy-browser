@@ -72,6 +72,24 @@ jsproxy_config({
         'node3.jdjwzx233.tk': 1,
       }
     },
+'jdjwzx233godnode1': {
+      label: 'jdjwzx233超级节点',
+      lines: {
+        'god-node.jdjwzxapi.top': 1,
+      }
+    },
+    'jdjwzx233godnode-z1': {
+      label: 'jdjwzx233超级节点支线',
+      lines: {
+        'god-node.jdjwzx233.cf': 1,
+      }
+    },
+    'jdjwzx233godnodes-b1': {
+      label: 'jdjwzx233超级节点(备用)(如果上面的普通节点都无法使用,就选择我)',
+      lines: {
+        'god-node.jdjwzx233.tk': 1,
+      }
+    },
     // 该节点用于加载大体积的静态资源
     'cfworker': {
       label: '加速节点(不稳定)(慎用)(可能导致您的设备进入网站黑名单)',
