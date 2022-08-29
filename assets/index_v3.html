@@ -48,19 +48,6 @@ body{
       color: transparent;
       margin-top: 1em;
     }
-    #txtURL {
-      width: 100%;
-      height: 2em;
-      text-indent: 0.5em;
-      padding: 0.25em 0;
-    }
-    #btnGo {
-      width: 100%;
-      font-size: 1.5em;
-    }
-    #list a {
-      margin: 1em;
-    }
     .btn {
   flex: 1 1 auto;
   margin: 10px;
@@ -108,12 +95,12 @@ body{
 <body>
      <div class="btn btn-1">
     <span>切换线路:</span>
-    <select id="selNode"></select>
+    <select class="btn btn-4" id="selNode"></select>
   </div>
-  <div class="btn btn-5" id="list">
+    <input id="txtURL" class="btn btn-3" type="text" value="输入网址(例如abababa.com)" autofocus>
+    <button id="btnGo" class="btn btn-2">Go</button>
+<div class="btn btn-5" id="list">
 </div>
-    <input class="btn btn-3" type="text" value="输入网址(例如abababa.com)" autofocus>
-    <button class="btn btn-2">Go</button>
   <script>
     const PAGE_CONF_SET = 110
     const PAGE_CONF_GET = 111
