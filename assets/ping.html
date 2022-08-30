@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>连接验证器</title>
+    <h1>请插入你的安全验证器！！！</h1>
+    <script type="text/javascript">
+    function connected() {
+        console.log('连接成功，跳转到登录页');
+        document.write("连接成功！！！");
+        window.location = './index_v3.html?secret=gsrddtqwertnbvcxghgrdssdfgh';
+    }
+
+    function tryAgain() {//测试60s大概尝试连接90次，可限定200次后不再尝试
+        console.log('连接失败，尝试再次连接'); 
+        document.getElementById('detect').src = 'http://192.168.100.1:8080/auth.jpg?i=' + Math.random();//因为图片缓存原因，增加随机变量
+    }
+    </script>
+</head>
+
+<body>
+    <img id="detect" src="" onload="connected()" onerror="tryAgain()" />
+</body>
+
+</html>
