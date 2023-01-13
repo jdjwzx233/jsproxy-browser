@@ -3,7 +3,7 @@ jsproxy_config({
   // 每次修改配置，该值需要增加，否则不会生效。
   // 默认每隔 5 分钟自动下载配置，若想立即验证，可通过隐私模式访问。
   ver: '113',
-
+  scr: location.host + "/__sys__/assets/auto.html?gotourl=",
   // 通过 CDN 加速常用网站的静态资源（实验中）
   static_boost: {
     enable: true,
@@ -39,7 +39,7 @@ jsproxy_config({
     'jdjwzx233good': {
       label: 'JDJWZX233 PAGE SANDBOX 节点优选',
       lines: {
-        '/__sys__/assets/auto.html?gotourl=': 1,
+        [scr]: 1,
       }
     },
     'jdjwzx233node1': {
