@@ -52,6 +52,7 @@ autourl[13]="node3.jdjwzx233.tk"
 function butt(){
 document.write("<form name=autof>")
 document.write("<table border=\"1\">")
+document.write("<tr><td>节点名</td><td>测试状态/结果</td><td>网址</td><td></td></tr>")
 for(var i=1;i<autourl.length;i++)document.write("<tr><td id=node"+i+">加载中......</td><td id=txt"+i+">测试中……</td><td id=url"+i+"></td><td><input type=button value=GO onclick=window.open(document.getElementById(\"url"+i+"\").innerText)></td></tr>")
 document.write("</table><input type=submit value=刷新></form>")
 }
