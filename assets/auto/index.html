@@ -80,7 +80,7 @@ if(getQueryVariable("gotourl")!=false && b>=autourl.length){
     window.location.replace(document.getElementById("url1").innerText+"-----"+str);
 }
 }
-function run(){for(var i=1;i<autourl.length;i++)document.write("<img src=https://"+autourl[i]+"/"+Math.random()+" width=1 height=1 onerror=auto('https://"+autourl[i]+"/',"+i+")>")}
+function run(){for(var i=1;i<autourl.length;i++)document.write("<img src=https://"+autourl[i]+"/__sys__/assets/avatar.jpg?"+Math.random()+" width=1 height=1 onerror=auto('https://"+autourl[i]+"/',"+i+")>")}
 run();
 
 </script>
